@@ -8,6 +8,11 @@ const routes: Routes = [{
 }, {
   path: 'home',
   loadChildren: './home/home.module#HomeModule',
+  pathMatch: 'full',
+}, {
+  path: 'admin',
+  loadChildren: './admin/admin.module#AdminModule',
+  pathMatch: 'full',
 }];
 
 @NgModule({
